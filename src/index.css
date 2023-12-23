@@ -1,0 +1,152 @@
+/* Body styles */
+body {
+  background-image: url('https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Container styles */
+.login-container {
+  width: 300px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Added position relative */
+}
+
+/* Welcome back text styles */
+.login-welcome-text {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+.login-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input field styles */
+.login-container input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Button styles */
+.login-container button {
+  width: 108%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Error and Success message styles */
+.login-error,
+.login-successful {
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.login-error {
+  background-color: none;
+  color: red;
+  border: 1px solid #ff4d4f;
+}
+
+.login-successful {
+  background-color: #52c41a;
+  border: 1px solid #52c41a;
+}
+
+/* Forget password link styles */
+.Forget {
+  text-decoration: none;
+  margin-top: 20px;
+  color: #2c4de3;
+  font-size: 12px
+}
+
+
+.no-account{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px; /* Adjust height as needed */
+  font-size: 12px; /* Adjust font size as needed */
+  color: #333;
+}
+/* -profile------------------------------------------------------------------------ */
+
+/* Container styles */
+.profile-container {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;   
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Back to login button */
+.back-to-login {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.back-to-login:hover {
+  background-color: #eee;
+}
+
+
+  /* Styles specific to mobile screens */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    background-size: contain;
+
+  }
+  .main-container {
+    width: 80%; /* Adjust the width for smaller screens */
+    padding: 10px; /* Adjust padding to create space */
+  }
+  .login-container{
+    width: 90%;
+  }
+  .no-account{
+    margin-left: 30px;
+  }
+}
