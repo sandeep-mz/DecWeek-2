@@ -39,7 +39,7 @@ const Login = ({ setUser }) => {
       {error && <p className="login-error">{error}</p>}
       <input
         type="text"
-        placeholder="Your Email"
+        placeholder="Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
